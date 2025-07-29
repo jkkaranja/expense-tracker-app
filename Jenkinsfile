@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'helm upgrade --install expense-tracker helm/'
+                sh 'helm upgrade --install expense-tracker ./helm'
             }
         }
     }
